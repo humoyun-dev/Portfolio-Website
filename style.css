@@ -89,7 +89,7 @@ section {
 }
 
 .main .content h2 {
-  color: #191970;
+  color: #1c1919;
   font-size: 32px;
   font-weight: 500;
 }
@@ -112,7 +112,7 @@ section {
   color: #fbfbfb;
   border-radius: 8px;
   padding: 0 30px;
-  width: auto;
+  width: 100%;
   margin: 20px 0;
   font-size: 46px;
   font-weight: 700;
@@ -450,4 +450,235 @@ section {
 
 .work .content .card-img img:hover {
   transform: scale(1.2);
+}
+
+.contact {
+  background-color: #fbfbfb;
+}
+
+.contact .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.contact .content .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.contact .row .card {
+  background: #fff;
+  width: 240px;
+  margin: 20px;
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 5px 25px #01010126;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.contact .card .contact-icon {
+  color: #191970;
+  font-size: 60px;
+  text-align: center;
+}
+
+.contact .card:hover .contact-icon {
+  transform: translateY(-10px);
+}
+
+.contact .card .info {
+  align-items: center;
+  text-align: center;
+}
+
+.contact .card .info h3 {
+  color: #191970;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.contact .card .info span {
+  color: #afafaf;
+}
+
+.contact-form {
+  background-color: #fff;
+  max-width: 800px;
+  margin-top: 50px;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+  overflow: hidden;
+}
+
+.contact-form h3 {
+  color: #191970;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-form .input-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+  color: #1c1919;
+  width: 100%;
+  padding: 10px;
+  font-size: 19px;
+  font-weight: 400;
+  outline: none;
+  border: 2px solid #191970;
+  border-radius: 8px;
+  resize: none;
+}
+
+.contact-form .input-box .btn {
+  color: #fbfbfb;
+  background-color: #191970;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  width: 100%;
+  border: none;
+  padding: 20px 0px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.contact-form .input-box .btn:hover {
+  background-color: #fbfbfb;
+  color: #1c1919;
+  border: 1px solid #191970;
+}
+
+.footer {
+  background-color: #1c1919;
+  color: #fbfbfb;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer .footer-title {
+  font-size: 20px;
+  font-weight: 600;
+  /* text-transform: uppercase; */
+}
+
+.footer p {
+  margin-top: 15px;
+}
+
+@media (max-width: 1023px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  header .navigation {
+    display: none;
+  }
+
+  .menuBtn {
+    position: absolute;
+    background: url(./img/menu.png) no-repeat;
+    background-size: 60px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    margin: 0 20px;
+    cursor: pointer;
+  }
+
+  section {
+    padding: 80px 20px;
+  }
+
+  .main .content h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .main .content {
+    padding: 20px;
+    /* max-width: 300px; */
+    width: 100%;
+  }
+
+  .main .content h2 span {
+    font-size: 30px;
+    font-weight: 900;
+    font: bold;
+  }
+
+  .main .content h3 {
+    font-size: 5px;
+    text-align: center;
+  }
+
+  .main .btnBrand {
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 900;
+  }
+
+  .mediaIcons a {
+    font-size: 22px;
+    margin: 0 5px;
+  }
+
+  .main .animatedText h3 {
+    padding: 0 10px;
+    letter-spacing: 1px;
+    /* height: 12px; */
+  }
+
+  .sectionTitle {
+    font-size: 30px;
+  }
+
+  .about .content {
+    flex-direction: column;
+  }
+
+  .about .content .column {
+    position: relative;
+    width: 100%;
+  }
+
+  .about .content .col-right {
+    margin-top: 40px;
+  }
+
+  .skills .content {
+    flex-direction: column;
+  }
+
+  .skills .content .column {
+    position: relative;
+    width: 100%;
+  }
+
+  .skills .content .col-right {
+    margin-top: 40px;
+  }
 }
