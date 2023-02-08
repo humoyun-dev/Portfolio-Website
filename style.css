@@ -30,6 +30,10 @@ header {
   align-items: center;
   z-index: 999;
 }
+header.sticky  {
+  background-color: #1c1919;
+  padding: 20px 50px;
+}
 
 header .brand {
   color: #ffd700;
@@ -630,7 +634,7 @@ section {
   }
 
   .main .content h3 {
-    font-size: 5px;
+    font-size: 17px;
     text-align: center;
   }
 
